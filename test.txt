@@ -1,0 +1,13 @@
+ get-aduser -filter * -searchbase "ou=Full-Time,dc=consor,dc=local" -properties Telephonenumber|select displayname, givenname, sn, telephonenumber|export-csv phones.csv
+
+
+PS C:\temp> get-aduser -filter * -searchbase "ou=full-time,ou=consor users,dc=consor,dc=local" -properties Telephonenumber|select displayname, givenname, sn, telephonenumber|export-csv phones.csv
+
+
+
+
+ get-aduser -filter * -searchbase "ou=AIA,ou=consor users,dc=consor,dc=local" -properties Telephonenumber,Division,office|select Name,telephonenumber,Division,office |export-csv phones.csv
+
+
+
+
